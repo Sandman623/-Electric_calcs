@@ -1,0 +1,161 @@
+@import url(_variables.scss);
+@import url(_grid-system.scss);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+$basecolor: #ebebeb3f;
+$sizebas: 10px;
+$color_boton: rgba(18, 18, 197, 0.336);
+$back_datos: hsl(0, 0%, 94%);
+$height: 300px;
+$color_boton: #204c69;
+@mixin formato()
+{
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #04072e;
+    padding: 1rem; 
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;   
+}
+
+body
+{
+    color:#252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    
+
+    main
+    {
+        display: flex;
+        justify-content: space-between;
+        section
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 600px;
+            h1, h2, h3, p, input
+            {
+                @include formato();
+                        
+            }
+            h1
+            {
+                font-size: 2rem;
+
+            }
+            
+            
+            label{
+                text-transform: capitalize;
+                color: #252525;
+                padding: 0.3rem; 
+            }
+            
+            div
+            {
+                background: $back_datos;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: $height;
+                flex-wrap: wrap;
+                padding: 1rem 1rem;
+
+                form{
+
+                    .botones
+                    {
+                        display: flex;
+                        justify-content:space-around;                      
+                        
+                                     
+                        
+                    }
+
+                    
+                    input
+                    {
+                        padding: 0.3rem;
+                        width: 5rem;
+                        
+                    }
+                                        
+
+                    button
+                    {
+                        
+                        bottom: 1rem;
+                        background-color: $color_boton;
+                        border-radius: 0.5rem;
+                        text-justify: center;
+                        border: none;
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 1rem;
+                        padding: 0.4rem;
+                        box-shadow: 7px 6px 15px -5px rgba(0,0,0,0.67);
+                        cursor: pointer;
+                        &:hover
+                        {
+                            background-color: #a13535;
+                        }
+                        
+
+
+                    }
+                
+                }
+            }
+
+        }
+
+        article
+        {
+            display: flex;
+            
+            ul
+            {
+                list-style: none;
+                li
+                {
+                    &:nth-child(2n)
+                    {
+                        background-color: rgb(192, 192, 192);                    
+
+                    }
+                    &:nth-child(2n-1)
+                    {
+                        background-color: rgb(228, 225, 225);                    
+
+                    }
+
+
+                }
+                
+
+            }
+
+        }
+     
+        .frames
+        {
+            position: relative;
+            display: flex;
+
+            height: 900px;
+            width: 300px;
+
+        }
+    }
+    
+
+}
+

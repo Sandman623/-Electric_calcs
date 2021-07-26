@@ -1,0 +1,85 @@
+@import url(_variables.scss);
+@import url(_grid-system.scss);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  color: #252525;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+body main {
+  display: flex;
+  justify-content: space-between;
+}
+body main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+}
+body main section h1, body main section h2, body main section h3, body main section p, body main section input {
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: #04072e;
+  padding: 1rem;
+}
+body main section h1 {
+  font-size: 2rem;
+}
+body main section label {
+  text-transform: capitalize;
+  color: #252525;
+  padding: 0.3rem;
+}
+body main section div {
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+}
+body main section div form .botones {
+  display: flex;
+  justify-content: space-around;
+}
+body main section div form input {
+  padding: 0.3rem;
+  width: 5rem;
+}
+body main section div form button {
+  bottom: 1rem;
+  background-color: #204c69;
+  border-radius: 0.5rem;
+  text-justify: center;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding: 0.4rem;
+  box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 0.67);
+  cursor: pointer;
+}
+body main section div form button:hover {
+  background-color: #a13535;
+}
+body main article {
+  display: flex;
+}
+body main article ul {
+  list-style: none;
+}
+body main article ul li:nth-child(2n) {
+  background-color: silver;
+}
+body main article ul li:nth-child(2n-1) {
+  background-color: #e4e1e1;
+}/*# sourceMappingURL=style.css.map */
